@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+    background: #0d1020;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 16px;
+}
+
+.app {
+    width: 100%;
+    max-width: 440px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #a78bfa, #5b8def);
+    display: grid;
+    place-items: center;
+    font-size: 27px;
+}
+
+.header h1 {
+    font-size: 23px;
+    letter-spacing: 0.5px;
+}
+
+.header p {
+    color: #929bb5;
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin-top: 4px;
+}
+
+.welcome {
+    text-align: center;
+    margin-top: 65px;
+}
+
+.greeting {
+    color: #a78bfa;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.welcome h2 {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: #929bb5;
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+.voice-section {
+    text-align: center;
+    margin: 55px 0 45px;
+}
+
+.orb {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(circle, #34305c, #171a34);
+    border: 1px solid #7770b8;
+    box-shadow: 0 0 45px #7864e044;
+    transition: 0.3s;
+}
+
+.orb button {
+    width: 90px;
+    height: 90px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background: linear-gradient(135deg, #a78bfa, #5b8def);
+    font-size: 34px;
+    color: white;
+}
+
+.orb.listening {
+    box-shadow: 0 0 55px #9b83ff99;
+    transform: scale(1.04);
+}
+
+.status {
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hint {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #929bb5;
+}
+
+.response-card {
+    background: #191d32;
+    border: 1px solid #303650;
+    border-radius: 18px;
+    padding: 22px;
+}
+
+.card-heading {
+    color: #a78bfa;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.card-heading span {
+    margin-right: 7px;
+}
+
+.response-card p {
+    color: #c4c9d8;
+    font-size: 13px;
+    margin-top: 13px;
+    line-height: 1.6;
+}
+
+.divider {
+    height: 1px;
+    background: #303650;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    color: #65708d;
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin-top: 28px;
+}
+
+@media (max-width: 380px) {
+    .welcome h2 {
+        font-size: 23px;
+    }
+
+    .orb {
+        width: 135px;
+        height: 135px;
+    }
+}

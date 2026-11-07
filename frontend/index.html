@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Wand - Voice Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app">
+
+        <header class="header">
+            <div class="logo">✦</div>
+            <div>
+                <h1>Magic Wand</h1>
+                <p>YOUR PERSONAL VOICE ASSISTANT</p>
+            </div>
+        </header>
+
+        <section class="welcome">
+            <p class="greeting">HELLO THERE!</p>
+            <h2>What can I do for you?</h2>
+            <p class="subtitle">Say "Hey fairy!" to get started.</p>
+        </section>
+<section class="wake-section">
+    <button id="wakeButton">
+        Enable Wake Word
+    </button>
+</section>
+        <section class="voice-section">
+            <div class="orb" id="orb">
+                <button id="micButton" aria-label="Start listening">
+                    <span>🎙</span>
+                </button>
+            </div>
+
+            <p class="status" id="status">Ready when you are</p>
+           <p class="hint">Tap the microphone to give a command</p>
+
+<button id="wakeButton">
+    Enable "Hey fairy!" Detection
+</button>
+        </section>
+
+        <section class="response-card">
+            <div class="card-heading">
+                <span>◉</span>
+                WHAT I HEARD
+            </div>
+            <p id="transcript">Your command will appear here...</p>
+
+            <div class="divider"></div>
+
+            <div class="card-heading">
+                <span>✦</span>
+                MAGIC WAND SAYS
+            </div>
+            <p id="response">Your assistant's response will appear here.</p>
+        </section>
+
+        <footer>
+            POWERED BY INTELLIGENT VOICE TECHNOLOGY
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
